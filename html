@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gure Xarma · Gastrobar en Irun, Gipuzkoa</title>
+<meta name="description" content="Gure Xarma, gastrobar y restaurante en Irun (Gipuzkoa). Cocina española con producto de calidad, menú del día y ambiente acogedor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#inicio" class="logo">Gure <span>Xarma</span></a>
+  <nav>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#carta">Carta</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#reservas" class="btn btn-small">Reservar</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <p class="eyebrow">Gastrobar · Restaurante · Irun</p>
+    <h1>Gure Xarma</h1>
+    <p class="lead">Cocina española con producto de calidad, en un ambiente cálido en pleno corazón de Irun.</p>
+    <div class="hero-actions">
+      <a href="#reservas" class="btn">Reservar mesa</a>
+      <a href="#carta" class="btn btn-outline">Ver carta</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div><strong>9,1</strong><span>Nota media de clientes</span></div>
+  <div><strong>Menú</strong><span>del día de lunes a sábado</span></div>
+  <div><strong>Centro</strong><span>de Irun, fácil de encontrar</span></div>
+</section>
+
+<section class="section about" id="nosotros">
+  <div class="container two-col">
+    <div>
+      <p class="eyebrow dark">Nuestra casa</p>
+      <h2>Sabor de casa, mirada gastronómica</h2>
+    </div>
+    <div>
+      <p>Gure Xarma («nuestro encanto» en euskera) es un gastrobar donde el equipo de cocina se esmera cada día en elaborar platos de la cocina española con cariño y buen producto.</p>
+      <p>Un local acogedor para relajarse después de la jornada, compartir raciones con amigos o venir en familia: los más pequeños también son bienvenidos. Precios ajustados y pago con tarjeta.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section menu" id="carta">
+  <div class="container">
+    <p class="eyebrow dark center">La carta</p>
+    <h2 class="center">Para compartir y para disfrutar</h2>
+    <div class="cards">
+      <article>
+        <h3>Menú del día</h3>
+        <p>Primero, segundo y postre de temporada, con bebida a elegir entre vino o agua. Una forma sencilla de comer bien entre semana.</p>
+      </article>
+      <article>
+        <h3>Raciones y pintxos</h3>
+        <p>Una selección para compartir en la barra o en mesa, con el sello de la cocina vasca y española.</p>
+      </article>
+      <article>
+        <h3>Platos de cocina</h3>
+        <p>Recetas tradicionales elaboradas al momento, con producto fresco y de proximidad.</p>
+      </article>
+      <article>
+        <h3>Postres y vinos</h3>
+        <p>Dulces caseros para cerrar la comida y una cuidada selección de vinos y bebidas.</p>
+      </article>
+    </div>
+    <p class="note">* Consulta la carta actualizada en el local o por teléfono.</p>
+  </div>
+</section>
+
+<section class="section reviews" id="opiniones">
+  <div class="container">
+    <p class="eyebrow center">Lo que dicen de nosotros</p>
+    <h2 class="center light">Clientes que repiten</h2>
+    <div class="cards three">
+      <blockquote>
+        <div class="stars">★★★★★</div>
+        “Cocina muy bien trabajada y una relación calidad-precio adecuada.”
+        <cite>Opinión de cliente</cite>
+      </blockquote>
+      <blockquote>
+        <div class="stars">★★★★★</div>
+        “Ambiente acogedor, perfecto para venir en familia y con niños.”
+        <cite>Opinión de cliente</cite>
+      </blockquote>
+      <blockquote>
+        <div class="stars">★★★★★</div>
+        “Siempre lleno: mejor reservar con antelación.”
+        <cite>Opinión de cliente</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section reserve" id="reservas">
+  <div class="container narrow">
+    <p class="eyebrow dark center">Reservas</p>
+    <h2 class="center">Reserva tu mesa</h2>
+    <p class="center">Por la gran afluencia, te recomendamos reservar con antelación, sobre todo en fin de semana.</p>
+    <form class="form" onsubmit="event.preventDefault(); alert('¡Gracias! Te confirmaremos la reserva muy pronto.');">
+      <input type="text" placeholder="Nombre" required>
+      <input type="tel" placeholder="Teléfono" required>
+      <input type="date" required>
+      <select required>
+        <option value="">Comensales</option>
+        <option>1–2</option><option>3–4</option><option>5–6</option><option>7 o más</option>
+      </select>
+      <button class="btn" type="submit">Solicitar reserva</button>
+    </form>
+  </div>
+</section>
+
+<section class="section contact" id="contacto">
+  <div class="container two-col">
+    <div>
+      <p class="eyebrow dark">Contacto</p>
+      <h2>Visítanos en Irun</h2>
+      <ul class="info">
+        <li><b>Dirección</b> [Calle y número], Irun, Gipuzkoa</li>
+        <li><b>Teléfono</b> [000 000 000]</li>
+        <li><b>Horario</b> Lunes a sábado · Domingo cerrado</li>
+      </ul>
+    </div>
+    <div class="map">
+      <iframe title="Mapa de Gure Xarma" loading="lazy"
+        src="https://www.google.com/maps?q=Gure+Xarma+Irun&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="logo">Gure <span>Xarma</span></p>
+  <p>© 2026 Gure Xarma · Irun, Gipuzkoa</p>
+</footer>
+
+</body>
+</html>
